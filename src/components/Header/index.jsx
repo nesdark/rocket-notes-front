@@ -1,0 +1,26 @@
+import { RiShutDownLine } from 'react-icons/ri';
+import { Container, Profile, Logout } from './styles';
+
+export function Header() {
+  return (
+    <Container>
+      <div>
+        <Profile>
+          <img
+            src="https://github.com/rodrigorgtic.png"
+            alt="Foto do usuário"
+          />
+
+          <div>
+            <span>Bem-vindo</span>
+            <strong>Rodrigo Gonçalves</strong>
+          </div>
+        </Profile>
+
+        <Logout>
+          <RiShutDownLine />
+        </Logout>
+      </div>
+    </Container>
+  );
+}
